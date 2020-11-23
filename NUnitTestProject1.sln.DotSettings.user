@@ -4,15 +4,10 @@
   &lt;PhysicalFolder Path="C:\Users\alexander\.nuget\packages\flaui.testutilities\3.2.0" Loaded="True" /&gt;&#xD;
   &lt;PhysicalFolder Path="C:\Users\alexander\.nuget\packages\flaui.fluent\3.0.0.105" Loaded="True" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f217446c_002Da885_002D4448_002Db235_002D189f76e1c135/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Mysql1.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Or&gt;&#xD;
-    &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:db/f:Mysql1.cs&lt;/ProjectFile&gt;&#xD;
-    &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:webui/f:UnitTest1.cs&lt;/ProjectFile&gt;&#xD;
-    &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:webui/d:heroku/d:xhttpmessages/f:AbstractXhttpMessagesTest.cs&lt;/ProjectFile&gt;&#xD;
-    &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:ui/f:CalculatorTest.cs&lt;/ProjectFile&gt;&#xD;
-    &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:ui/d:notepad/f:NotepadTest.cs&lt;/ProjectFile&gt;&#xD;
-  &lt;/Or&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2fd6d6ac_002D3fd8_002D4963_002D8666_002D53707c7235f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="uploadTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;0B51673A-880A-4121-99C3-01E07A3A09A2/d:tests/d:webui/d:heroku/d:fileupload/f:FileUploadTest.cs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	
 	
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

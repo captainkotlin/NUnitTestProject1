@@ -8,6 +8,7 @@ namespace NUnitTestProject1.tests.webui.heroku.xhttpmessages
     {
         [Test]
         [Category(TestCategories.WebUi)]
+        [Ignore("Due to unstable 'stale <li> element'")]
         public void test()
         {
             var liveMessages = page.getLiveMessages();

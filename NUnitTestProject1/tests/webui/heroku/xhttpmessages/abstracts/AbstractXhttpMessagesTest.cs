@@ -1,5 +1,5 @@
 ﻿using System;
-using NUnitTestProject1.abstracts;
+using NUnitTestProject1.tests.webui.abstracts;
 using NUnitTestProject1.tests.webui.heroku.pages;
 
 namespace NUnitTestProject1.tests.webui.heroku.xhttpmessages.abstracts

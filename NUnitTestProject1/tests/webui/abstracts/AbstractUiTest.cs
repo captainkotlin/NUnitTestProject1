@@ -1,9 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
-using NUnitTestProject1.tests.webui.abstracts;
 using NUnitTestProject1.tests.webui.utils;
 
-namespace NUnitTestProject1.abstracts
+namespace NUnitTestProject1.tests.webui.abstracts
 {
     public abstract class AbstractWebUiTest<T> where T : AbstractPage<T>, new()
     {
@@ -13,7 +12,7 @@ namespace NUnitTestProject1.abstracts
         [SetUp]
         public void setUp()
         {
-            driver = new WebDriverProvider().getRemoteDriver();
+            driver = new WebDriverProvider().getDriver();
             driver.Url = getUrl();
             page = AbstractPage<T>.of(driver);
         }
