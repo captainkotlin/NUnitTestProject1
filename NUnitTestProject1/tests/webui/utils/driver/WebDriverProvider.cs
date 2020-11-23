@@ -19,14 +19,15 @@ namespace NUnitTestProject1.tests.webui.utils
             browser = TestContext.Parameters[CommandLineConstants.browser];
         }
 
-        public RemoteWebDriver getRemoteDriver()
+        public WebDriverWrapper getRemoteDriver()
         {
             var driverOptions = new BrowserDependentAction<DriverOptions>()
                 .with(BrowserConstants.chrome, () => new ChromeOptions())
                 .with(BrowserConstants.firefox, () => new FirefoxOptions())
                 .with(BrowserConstants.opera, () => new OperaOptions())
                 .get(browser);
-            return new RemoteWebDriver(new Uri(RuntimeConfiguration.webDriverRemoteUrl), driverOptions);
+            var driver = new RemoteWebDriver(new Uri(RuntimeConfiguration.webDriverRemoteUrl), driverOptions);
+            return WebDriverWrapper.of(driver);
         }
 
         public WebDriverWrapper getDriver()

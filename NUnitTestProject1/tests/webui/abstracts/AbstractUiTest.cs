@@ -16,7 +16,7 @@ namespace NUnitTestProject1.abstracts
         [SetUp]
         public void setUp()
         {
-            driver = new WebDriverProvider().getDriver();
+            driver = new WebDriverProvider().getRemoteDriver();
             driver.Url = getUrl();
             page = AbstractPage<T>.of(driver);
         }

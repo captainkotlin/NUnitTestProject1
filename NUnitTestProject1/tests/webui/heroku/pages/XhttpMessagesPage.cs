@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NUnitTestProject1.abstracts;
 using NUnitTestProject1.heroku.pages.message;
 using NUnitTestProject1.tests.webui.abstracts;
-using NUnitTestProject1.tests.webui.utils;
 using OpenQA.Selenium;
-using Selenium.Community.PageObjects;
 
-namespace NUnitTestProject1.heroku.pages
+namespace NUnitTestProject1.tests.webui.heroku.pages
 {
     public class XhttpMessagesPage : AbstractPage<XhttpMessagesPage>
     {
