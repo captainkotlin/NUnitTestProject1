@@ -10,7 +10,7 @@ namespace NUnitTestProject1.tests.ui.abstracts
         public void init(Window window)
         {
             this.window = window;
-            window.Focus();
+            window.FocusNative();
             sleep(2);
         }
 

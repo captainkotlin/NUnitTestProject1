@@ -1,10 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
-using NUnitTestProject1.heroku.pages;
 using NUnitTestProject1.tests.webui.abstracts;
 using NUnitTestProject1.tests.webui.utils;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 
 namespace NUnitTestProject1.abstracts
 {
