@@ -28,6 +28,69 @@
           "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
+      "FlaUI.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Diagnostics.PerformanceCounter": "4.7.0",
+          "System.Drawing.Common": "4.7.0",
+          "System.Management": "4.7.0",
+          "System.Security.Permissions": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/FlaUI.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "FlaUI.Core.Signed/3.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Diagnostics.PerformanceCounter": "4.7.0",
+          "System.Drawing.Common": "4.7.0",
+          "System.Management": "4.7.0",
+          "System.Security.Permissions": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FlaUI.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "FlaUI.Fluent/3.0.0.105": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FlaUI.Fluent.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FlaUI.Fluent.dll": {}
+        }
+      },
+      "FlaUI.UIA3.Signed/3.2.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core.Signed": "3.2.0",
+          "Interop.UIAutomationClient.Signed": "10.18362.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FlaUI.UIA3.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FlaUI.UIA3.dll": {}
+        }
+      },
       "Google.Protobuf/3.11.4": {
         "type": "package",
         "dependencies": {
@@ -38,6 +101,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Interop.UIAutomationClient.Signed/10.18362.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Interop.UIAutomationClient.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Interop.UIAutomationClient.dll": {}
         }
       },
       "K4os.Compression.LZ4/1.1.11": {
@@ -600,7 +672,7 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
@@ -874,6 +946,15 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "System.CodeDom/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1050,6 +1131,27 @@
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
+      "System.Diagnostics.PerformanceCounter/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Configuration.ConfigurationManager": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Diagnostics.Tools/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -1224,6 +1326,26 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
+        }
+      },
+      "System.Management/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.CodeDom": "4.7.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Management.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Memory/4.5.3": {
@@ -1919,6 +2041,97 @@
         "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
       ]
     },
+    "FlaUI.Core/3.0.0": {
+      "sha512": "VbAMxD9V/P1FZHyZcEFDV/j1wqv3h8kNARIMy9OD6rEkflVGXoOyEA78gPgCWARlQFFI8hyjkn2kr8QLvx3P3w==",
+      "type": "package",
+      "path": "flaui.core/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.core.3.0.0.nupkg.sha512",
+        "flaui.core.nuspec",
+        "lib/net35/FlaUI.Core.dll",
+        "lib/net35/FlaUI.Core.xml",
+        "lib/net40/FlaUI.Core.dll",
+        "lib/net40/FlaUI.Core.xml",
+        "lib/net45/FlaUI.Core.dll",
+        "lib/net45/FlaUI.Core.xml",
+        "lib/netcoreapp3.0/FlaUI.Core.dll",
+        "lib/netcoreapp3.0/FlaUI.Core.xml",
+        "lib/netstandard2.0/FlaUI.Core.dll",
+        "lib/netstandard2.0/FlaUI.Core.xml"
+      ]
+    },
+    "FlaUI.Core.Signed/3.2.0": {
+      "sha512": "xT7M8Va+1yl92sbA0E0o4Rli6pv80sKOnx4uBXskB+9fMYNsQW8H3k/femIDAgkYbNf40MAwLuX2/JarmQwjFg==",
+      "type": "package",
+      "path": "flaui.core.signed/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.core.signed.3.2.0.nupkg.sha512",
+        "flaui.core.signed.nuspec",
+        "lib/net35/FlaUI.Core.dll",
+        "lib/net35/FlaUI.Core.xml",
+        "lib/net40/FlaUI.Core.dll",
+        "lib/net40/FlaUI.Core.xml",
+        "lib/net45/FlaUI.Core.dll",
+        "lib/net45/FlaUI.Core.xml",
+        "lib/netcoreapp3.0/FlaUI.Core.dll",
+        "lib/netcoreapp3.0/FlaUI.Core.xml",
+        "lib/netcoreapp3.1/FlaUI.Core.dll",
+        "lib/netcoreapp3.1/FlaUI.Core.xml",
+        "lib/netstandard2.0/FlaUI.Core.dll",
+        "lib/netstandard2.0/FlaUI.Core.xml"
+      ]
+    },
+    "FlaUI.Fluent/3.0.0.105": {
+      "sha512": "pWBm+U6WGKlqYZMiR8/KrguLUohTIpVn2vjkoZrnv8u/94BxewcYGDWTZ0PT0meiaUFnDUTnFmzh0zcy2GV4Yg==",
+      "type": "package",
+      "path": "flaui.fluent/3.0.0.105",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flaui.fluent.3.0.0.105.nupkg.sha512",
+        "flaui.fluent.nuspec",
+        "lib/net45/FlaUI.Fluent.dll",
+        "lib/net45/FlaUI.Fluent.xml",
+        "lib/netstandard2.0/FlaUI.Fluent.dll",
+        "lib/netstandard2.0/FlaUI.Fluent.xml"
+      ]
+    },
+    "FlaUI.UIA3.Signed/3.2.0": {
+      "sha512": "VEgf1JfEqH3TZ59HqtgcuIaglhJ0m17tuToszO35JA0/BkEJ9cHSMp5zY7pop9LLV+eK702k4CCUb/s2CSzZMA==",
+      "type": "package",
+      "path": "flaui.uia3.signed/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.uia3.signed.3.2.0.nupkg.sha512",
+        "flaui.uia3.signed.nuspec",
+        "lib/net35/FlaUI.UIA3.dll",
+        "lib/net35/FlaUI.UIA3.xml",
+        "lib/net40/FlaUI.UIA3.dll",
+        "lib/net40/FlaUI.UIA3.xml",
+        "lib/net45/FlaUI.UIA3.dll",
+        "lib/net45/FlaUI.UIA3.xml",
+        "lib/netcoreapp3.0/FlaUI.UIA3.dll",
+        "lib/netcoreapp3.0/FlaUI.UIA3.xml",
+        "lib/netcoreapp3.1/FlaUI.UIA3.dll",
+        "lib/netcoreapp3.1/FlaUI.UIA3.xml",
+        "lib/netstandard2.0/FlaUI.UIA3.dll",
+        "lib/netstandard2.0/FlaUI.UIA3.xml"
+      ]
+    },
     "Google.Protobuf/3.11.4": {
       "sha512": "dajCxjDCiPyZuqwZCkFJTwhn/0TJ5VesIs4fXvs56ez1VUi68JjhYMMsPjnJ9gcPqJwTMtXMU1WqUdXYiG1x4w==",
       "type": "package",
@@ -1937,6 +2150,26 @@
         "lib/netstandard2.0/Google.Protobuf.dll",
         "lib/netstandard2.0/Google.Protobuf.pdb",
         "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Interop.UIAutomationClient.Signed/10.18362.0": {
+      "sha512": "1Um1StYhaYGHphT/myPa09xUxMAoMA3lMeEzPS4FRVOZWg8FCRDPNYm5i18/lN79N/SQplnb6uVKpvTJBeZ6rA==",
+      "type": "package",
+      "path": "interop.uiautomationclient.signed/10.18362.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/Interop.UIAutomationClient.targets",
+        "interop.uiautomationclient.signed.10.18362.0.nupkg.sha512",
+        "interop.uiautomationclient.signed.nuspec",
+        "lib/net35/Interop.UIAutomationClient.dll",
+        "lib/net40/Interop.UIAutomationClient.dll",
+        "lib/net45/Interop.UIAutomationClient.dll",
+        "lib/netcoreapp3.0/Interop.UIAutomationClient.dll",
+        "lib/netstandard2.0/Interop.UIAutomationClient.dll",
+        "tools/install.ps1"
       ]
     },
     "K4os.Compression.LZ4/1.1.11": {
@@ -3338,6 +3571,29 @@
         "version.txt"
       ]
     },
+    "System.CodeDom/4.7.0": {
+      "sha512": "Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
+      "type": "package",
+      "path": "system.codedom/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/net461/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.4.7.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
@@ -3902,6 +4158,45 @@
         "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
         "system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Diagnostics.PerformanceCounter/4.7.0": {
+      "sha512": "kE9szT4i3TYT9bDE/BPfzg9/BL6enMiZlcUmnUEBrhRtxWvurKoa8qhXkLTRhrxMzBqaDleWlRfIPE02tulU+w==",
+      "type": "package",
+      "path": "system.diagnostics.performancecounter/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Diagnostics.PerformanceCounter.dll",
+        "lib/net461/System.Diagnostics.PerformanceCounter.xml",
+        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
+        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Diagnostics.PerformanceCounter.dll",
+        "ref/net461/System.Diagnostics.PerformanceCounter.xml",
+        "ref/net472/System.Diagnostics.PerformanceCounter.dll",
+        "ref/net472/System.Diagnostics.PerformanceCounter.xml",
+        "ref/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
+        "ref/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.xml",
+        "system.diagnostics.performancecounter.4.7.0.nupkg.sha512",
+        "system.diagnostics.performancecounter.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -4490,6 +4785,30 @@
         "ref/xamarinwatchos10/_._",
         "system.linq.4.3.0.nupkg.sha512",
         "system.linq.nuspec"
+      ]
+    },
+    "System.Management/4.7.0": {
+      "sha512": "IY+uuGhgzWiCg21i8IvQeY/Z7m1tX8VuPF+ludfn7iTCaccTtJo5HkjZbBEL8kbBubKhAKKtNXr7uMtmAc28Pw==",
+      "type": "package",
+      "path": "system.management/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Management.dll",
+        "ref/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Management.xml",
+        "system.management.4.7.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory/4.5.3": {
@@ -6665,6 +6984,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "DotNetSeleniumExtras.PageObjects >= 3.11.0",
+      "FlaUI.Fluent >= 3.0.0.105",
+      "FlaUI.UIA3.Signed >= 3.2.0",
       "Microsoft.Data.SqlClient >= 2.1.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
@@ -6721,6 +7042,14 @@
           "DotNetSeleniumExtras.PageObjects": {
             "target": "Package",
             "version": "[3.11.0, )"
+          },
+          "FlaUI.Fluent": {
+            "target": "Package",
+            "version": "[3.0.0.105, )"
+          },
+          "FlaUI.UIA3.Signed": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           },
           "Microsoft.Data.SqlClient": {
             "target": "Package",

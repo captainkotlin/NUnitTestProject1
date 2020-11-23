@@ -155,3 +155,9 @@ E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netc
 E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.engine.dll
 E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\FlaUI.Core.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\FlaUI.UIA3.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\Interop.UIAutomationClient.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\System.Management.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+E:\prog_projects\DotNet\Nunit\NUnitTestProject1\NUnitTestProject1\bin\Debug\netcoreapp3.1\FlaUI.Fluent.dll

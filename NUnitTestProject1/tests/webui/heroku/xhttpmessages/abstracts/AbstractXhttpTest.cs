@@ -11,7 +11,7 @@ namespace NUnitTestProject1.tests.webui.heroku.xhttpmessages
             return "https://testpages.herokuapp.com/styled/sync/xhttp-messages.html";
         }
 
-        protected override Type getPageType()
+        protected virtual Type getPageType()
         {
             return typeof(XhttpMessagesPage);
         }

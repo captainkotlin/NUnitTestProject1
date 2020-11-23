@@ -23,8 +23,6 @@ namespace NUnitTestProject1.abstracts
 
         protected abstract String getUrl();
 
-        protected abstract Type getPageType();
-
         [TearDown]
         public void tearDown()
         {
