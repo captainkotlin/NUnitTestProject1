@@ -1,11 +1,13 @@
 ﻿using NUnit.Framework;
+using NUnitTestProject1.tests.utils;
 using NUnitTestProject1.tests.webui.heroku.xhttpmessages.abstracts;
 
 namespace NUnitTestProject1.tests.webui.heroku.xhttpmessages
 {
-    public class AbstractXhttpMessagesTest : AbstractXhttpTest
+    public class XhttpMessagesMessagesTest : AbstractXhttpMessagesTest
     {
         [Test]
+        [Category(TestCategories.WebUi)]
         public void test()
         {
             var liveMessages = page.getLiveMessages();

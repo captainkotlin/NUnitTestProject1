@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NUnitTestProject1.tests.db.utils
+namespace NUnitTestProject1.tests.utils
 {
     public class Optional<T>
     {

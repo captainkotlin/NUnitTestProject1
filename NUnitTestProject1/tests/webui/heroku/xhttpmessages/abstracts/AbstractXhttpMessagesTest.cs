@@ -4,7 +4,7 @@ using NUnitTestProject1.tests.webui.heroku.pages;
 
 namespace NUnitTestProject1.tests.webui.heroku.xhttpmessages.abstracts
 {
-    public class AbstractXhttpTest : AbstractWebUiTest<XhttpMessagesPage>
+    public class AbstractXhttpMessagesTest : AbstractWebUiTest<XhttpMessagesPage>
     {
         protected override string getUrl()
         {

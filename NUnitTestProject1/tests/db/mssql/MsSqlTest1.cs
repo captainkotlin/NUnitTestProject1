@@ -5,6 +5,7 @@ using NUnit.Framework;
 using NUnitTestProject1.tests.db.mssql.entities;
 using NUnitTestProject1.tests.mssql.abstracts;
 using NUnitTestProject1.tests.mssql.utils;
+using NUnitTestProject1.tests.utils;
 
 namespace NUnitTestProject1.tests.db.mssql
 {
@@ -12,6 +13,7 @@ namespace NUnitTestProject1.tests.db.mssql
     public class MsSqlTest1 : AbstractMsSqlTest
     {
         [Test]
+        [Category(TestCategories.MsSql)]
         public void test()
         {
             List<Customer> customers = new MsSqlUtils(connection).read("SELECT * FROM Northwind.dbo.Customers", new Customer().read);

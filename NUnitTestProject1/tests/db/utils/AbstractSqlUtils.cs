@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Text;
+using NUnitTestProject1.tests.utils;
 
 namespace NUnitTestProject1.tests.db.mssql.utils
 {

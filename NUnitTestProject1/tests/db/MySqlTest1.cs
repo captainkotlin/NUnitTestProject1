@@ -7,13 +7,15 @@ using MySql.Data.MySqlClient;
 using NUnitTestProject1.tests.db.mysql;
 using NUnitTestProject1.tests.db.utils;
 using NUnitTestProject1.tests.db.mysql.entities;
+using NUnitTestProject1.tests.utils;
 
 namespace NUnitTestProject1.tests.db
 {
     [TestFixture]
-    public class Mysql1 : AbstractMySqlTest
+    public class MySqlTest1 : AbstractMySqlTest
     {
         [Test]
+        [Category(TestCategories.MySql)]
         public void test()
         {
             Console.WriteLine("Test");

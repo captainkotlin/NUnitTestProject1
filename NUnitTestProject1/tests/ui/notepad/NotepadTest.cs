@@ -4,12 +4,14 @@ using NUnit.Framework;
 using NUnitTestProject1.tests.ui.abstracts;
 using NUnitTestProject1.tests.ui.notepad.pages;
 using NUnitTestProject1.tests.ui.utils;
+using NUnitTestProject1.tests.utils;
 
 namespace NUnitTestProject1.tests.ui.notepad
 {
     public class CalculatorTest : AbstractUiTest<NotepadPage>
     {
         [Test]
+        [Category(TestCategories.Ui)]
         public void test()
         {
             var textToType = "Text, typed in notepad";
